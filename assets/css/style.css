@@ -1,0 +1,149 @@
+body {
+    margin:0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header.header-area {
+    text-align: center;
+    padding: 30px 0;
+}
+header.header-area .logo img {
+    width: 14%;
+}
+.content-header-image img {
+    width: 70%;
+}
+.content-header-content h5 {
+    font-weight: bold;
+}
+.content-header-content p {
+    color: #8c8787;
+}
+.subscribe-form h5 {
+    position: relative;
+}
+.subscribe-form h5::before {
+    content: "";
+    display: block;
+    clear: both;
+    background: #cccccc;
+    height: 1px;
+    width: 41%;
+    position: absolute;
+    top: 11px;
+    left: 0;
+}
+.subscribe-form h5::after {
+    content: "";
+    display: block;
+    clear: both;
+    background: #cccccc;
+    height: 1px;
+    width: 41%;
+    position: absolute;
+    top: 11px;
+    right: 0;
+}
+.main-area-middle-image img {
+    width: 100%;
+}
+.main-area-app-demo img {
+    width: 100%;
+    margin-top: -38px;
+}
+.app-download-area {
+margin-top: 30px;
+}
+.app-download-area h5 {
+    position: relative;
+  
+}
+.app-download-area h5::before {
+    content: "";
+    display: block;
+    clear: both;
+    background: #cccccc;
+    height: 1px;
+    width: 20%;
+    position: absolute;
+    top: 11px;
+    left: 0;
+}
+.app-download-area h5::after {
+    content: "";
+    display: block;
+    clear: both;
+    background: #cccccc;
+    height: 1px;
+    width: 20%;
+    position: absolute;
+    top: 11px;
+    right: 0;
+}
+.app-download-link {
+    display: flex;
+    width: 100%;
+}
+.app-download-link a {
+    width: 50%;
+    float: left;
+}
+.app-download-link a img {
+    width: 100%;
+}
+.footer-copyright p {
+    color: #858080;
+}
+.privacy-terms a {
+    color: #858080;
+}
+
+
+/* team page css  */
+.team-area {
+    padding: 10vh 0;
+}
+.team-single {
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    min-height: 250px;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+.team-single img {
+    width: 72%;
+    height: 150px;
+}
+.team-single h4 {
+    font-weight: bold;
+    margin-top: 20px;
+}
+.team-single p {
+    font-weight: 600;
+    color: #747070;
+}
+
+ /* responsive css  */
+ @media only screen and (max-width: 600px) {
+    header.header-area .logo img {
+        width: 48%;
+    }
+    .app-download-area {
+        /* margin-top: 30px; */
+        margin: 55px 0;
+    }
+    form.subscribe-form {
+        margin: 8px 0;
+    }
+    .team-single {
+        margin: 10px 30px;
+    }
+ }
