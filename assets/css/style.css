@@ -1,33 +1,65 @@
+/* font converted using font-converter.net. thank you! */
+
+@font-face {
+    font-family: "SFRounded-Ultralight";
+    src: url(".../fonts/FontsFree-Net-SF-Pro-Rounded-Regular.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/FontsFree-Net-SF-Pro-Rounded-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/FontsFree-Net-SF-Pro-Rounded-Regular.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/FontsFree-Net-SF-Pro-Rounded-Regular.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/FontsFree-Net-SF-Pro-Rounded-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/FontsFree-Net-SF-Pro-Rounded-Regular.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/FontsFree-Net-SF-Pro-Rounded-Regular.woff2") format("woff2");
+    /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    margin:0;
+    margin: 0;
     padding: 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    font-family: 'SFRounded-Ultralight', sans-serif;
+}
 
+section {
+    position: relative;
+    height: 100vh;
+    min-height: 100%;
 }
 
 header.header-area {
     text-align: center;
     padding: 30px 0;
 }
+
 header.header-area .logo img {
     width: 14%;
 }
+
 .content-header-image img {
     width: 70%;
 }
+
 .content-header-content h5 {
     font-weight: bold;
 }
+
 .content-header-content p {
     color: #8c8787;
 }
+
 .subscribe-form h5 {
     position: relative;
 }
+
 .subscribe-form h5::before {
     content: "";
     display: block;
@@ -39,6 +71,7 @@ header.header-area .logo img {
     top: 11px;
     left: 0;
 }
+
 .subscribe-form h5::after {
     content: "";
     display: block;
@@ -50,20 +83,24 @@ header.header-area .logo img {
     top: 11px;
     right: 0;
 }
+
 .main-area-middle-image img {
     width: 100%;
 }
+
 .main-area-app-demo img {
-    width: 100%;
+    width: 75%;
     margin-top: -38px;
 }
+
 .app-download-area {
-margin-top: 30px;
+    margin-top: 30px;
 }
+
 .app-download-area h5 {
     position: relative;
-  
 }
+
 .app-download-area h5::before {
     content: "";
     display: block;
@@ -75,6 +112,7 @@ margin-top: 30px;
     top: 11px;
     left: 0;
 }
+
 .app-download-area h5::after {
     content: "";
     display: block;
@@ -86,29 +124,35 @@ margin-top: 30px;
     top: 11px;
     right: 0;
 }
+
 .app-download-link {
     display: flex;
     width: 100%;
 }
+
 .app-download-link a {
     width: 50%;
     float: left;
 }
+
 .app-download-link a img {
     width: 100%;
 }
+
 .footer-copyright p {
     color: #858080;
 }
+
 .privacy-terms a {
     color: #858080;
 }
 
-
 /* team page css  */
+
 .team-area {
     padding: 10vh 0;
 }
+
 .team-single {
     overflow: hidden;
     text-align: center;
@@ -118,27 +162,46 @@ margin-top: 30px;
     padding: 10px 0;
     margin: 10px 0;
 }
+
 .team-single img {
     width: 72%;
     height: 150px;
 }
+
 .team-single h4 {
     font-weight: bold;
     margin-top: 20px;
 }
+
 .team-single p {
     font-weight: 600;
     color: #747070;
 }
 
- /* responsive css  */
- @media only screen and (max-width: 600px) {
+.getstart-btn {
+    background-color: #0FADA5;
+    border: none;
+}
+
+.freb-input {
+    background-color: #F7F9FC;
+}
+.mobile-banner-image-demo {
+    display: none;
+}
+/* responsive css  */
+
+@media only screen and (max-width: 600px) {
     header.header-area .logo img {
         width: 48%;
     }
+    section {
+        position: relative;
+        height: auto !important;
+        min-height: 100%;
+    }
     .app-download-area {
-        /* margin-top: 30px; */
-        margin: 55px 0;
+        margin: 85px 0;
     }
     form.subscribe-form {
         margin: 8px 0;
@@ -146,4 +209,25 @@ margin-top: 30px;
     .team-single {
         margin: 10px 30px;
     }
- }
+    .content-header-image {
+        display: none;
+    }
+    .main-area-middle-image-mobile img {
+        margin-top: 45%;
+    }
+    .mobile-banner-image-demo {
+        display: block;
+    }
+    #demo video {
+        height: 50vh !important;
+    }
+    .team-area {
+        padding: 2vh 0;
+    }
+    .desktop-image-banner {
+        display: none;
+    }
+    .desktop-demo-image {
+        display: none;
+    }
+}
